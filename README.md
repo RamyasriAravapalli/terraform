@@ -5,6 +5,5 @@ terraform fmt
 terraform plan
 terraform destory
 terraform validate
-terraform apply
 ```
 
