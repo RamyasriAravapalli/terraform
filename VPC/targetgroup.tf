@@ -2,7 +2,7 @@ resource "aws_lb_target_group" "web_tg" {
   name     = var.target_group_name
   port     = var.port
   protocol = "HTTP"
-  vpc_id   = aws_vpc.main.id
+  vpc_id   = aws_vpc.vpc_main.id
 }
 
 resource "aws_lb_target_group_attachment" "test" {

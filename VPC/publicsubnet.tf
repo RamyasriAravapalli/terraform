@@ -1,5 +1,5 @@
 resource "aws_subnet" "sh_subnet_1"{
-    vpc_id = aws_vpc.main.id
+    vpc_id = aws_vpc.vpc_main.id
     cidr_block = "10.0.0.0/27"
     availability_zone = "us-east-1a"
 
@@ -8,7 +8,7 @@ resource "aws_subnet" "sh_subnet_1"{
 #creating 2nd public subnet
 
 resource "aws_subnet" "sh_subnet_2"{
-    vpc_id = aws_vpc.main.id
+    vpc_id = aws_vpc.vpc_main.id
     cidr_block = "10.0.0.0/28"
     availability_zone = "us-east-1b"
 
